@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Me Plants !</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/leaves.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Me Plants !</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categories">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Plants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pots">Pots</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container-fluid">
+        <div class="row mt-5">
+          <div class="col" id="heading-col">
+            <h1
+              class="text-center home-heading animate__animated animate__fadeIn"
+            >
+              Spread <span>green</span> in your life.
+            </h1>
+            <p
+              class="text-center home-subhead animate__animated animate__fadeIn"
+            >
+              Find the Perfect Plant Companion for Your Space.
+            </p>
+            <button type="button" class="btn" id="discover-btn">
+              Discover Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="home-carousel">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/carousel-1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/carousel-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/carousel-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col center-col">
+            <h3 class="text-center text-green">Explore Categories in Plants</h3>
+            <hr class="underline" />
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div class="box-container" data-aos="fade-right">
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/indoor-plants.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Indoor Plants</h5>
+                  <a href="#indoor" class="btn" id="explore-btn">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-plants.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plants</h5>
+                  <a href="#outdoor" class="btn" id="explore-btn">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/succulents.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Succulents</h5>
+                  <a href="#succulents" class="btn" id="explore-btn">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/fruits-vegetables.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables</h5>
+                  <a href="#fruits" class="btn" id="explore-btn">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/gift-hampers.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gift Hampers</h5>
+                  <a href="#gift" class="btn" id="explore-btn">Explore</a>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/gardening-tools.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gardening Tool</h5>
+                  <a href="#" class="btn" id="explore-btn">Explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="indoor">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col center-col">
+            <h3 class="text-center text-green">Indoor Plants</h3>
+            <hr class="underline" />
+          </div>
+        </div>
+        <div class="container mt-5 mb-5">
+          <div class="box-container" data-aos="zoom-in">
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/indoor-1.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Indoor Plant 1</h5>
+                  <p class="card-text text-brown price-p">$ 18.2</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/indoor-2.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Indoor Plant 2</h5>
+                  <p class="card-text text-brown price-p">$ 22.3</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/indoor-3.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Indoor Plant 3</h5>
+                  <p class="card-text text-brown price-p">$ 20.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/indoor-4.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Indoor Plant 4</h5>
+                  <p class="card-text text-brown price-p">$ 10.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/indoor-6.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Indoor Plant 5</h5>
+                  <p class="card-text text-brown price-p">$ 15.4</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/indoor-7.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Indoor Plant 6</h5>
+                  <p class="card-text text-brown price-p">$ 90.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/indoor-8.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Indoor Plant 7</h5>
+                  <p class="card-text text-brown price-p">$ 45.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/indoor-9.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Indoor Plant 8</h5>
+                  <p class="card-text text-brown price-p">$ 30.6</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/indoor-10.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Indoor Plant 9</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="outdoor">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col center-col">
+            <h3 class="text-center text-green">Outdoor Plants</h3>
+            <hr class="underline" />
+          </div>
+        </div>
+        <div class="container mt-5 mb-5">
+          <div class="box-container" data-aos="zoom-in">
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-1.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 1</h5>
+                  <p class="card-text text-brown price-p">$ 18.2</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-2.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 2</h5>
+                  <p class="card-text text-brown price-p">$ 22.3</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-3.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 3</h5>
+                  <p class="card-text text-brown price-p">$ 20.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-4.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 4</h5>
+                  <p class="card-text text-brown price-p">$ 10.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-5.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 5</h5>
+                  <p class="card-text text-brown price-p">$ 15.4</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-6.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 6</h5>
+                  <p class="card-text text-brown price-p">$ 90.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-7.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 7</h5>
+                  <p class="card-text text-brown price-p">$ 45.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-8.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 8</h5>
+                  <p class="card-text text-brown price-p">$ 30.6</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-9.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 9</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-10.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 10</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-11.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 11</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/outdoor-12.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Plant 12</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="succulents">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col center-col">
+            <h3 class="text-center text-green">Succulents</h3>
+            <hr class="underline" />
+          </div>
+        </div>
+        <div class="container mt-5 mb-5">
+          <div class="box-container" data-aos="zoom-in">
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/succulents-1.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Succulents 1</h5>
+                  <p class="card-text text-brown price-p">$ 18.2</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/succulents-2.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Succulents 2</h5>
+                  <p class="card-text text-brown price-p">$ 22.3</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/succulents-3.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Succulents 3</h5>
+                  <p class="card-text text-brown price-p">$ 20.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fruits">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col center-col">
+            <h3 class="text-center text-green">Fruits & Vegetables</h3>
+            <hr class="underline" />
+          </div>
+        </div>
+        <div class="container mt-5 mb-5">
+          <div class="box-container" data-aos="zoom-in">
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-1.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 1</h5>
+                  <p class="card-text text-brown price-p">$ 18.2</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-2.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 2</h5>
+                  <p class="card-text text-brown price-p">$ 22.3</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-3.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 3</h5>
+                  <p class="card-text text-brown price-p">$ 20.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-4.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 4</h5>
+                  <p class="card-text text-brown price-p">$ 10.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-5.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 5</h5>
+                  <p class="card-text text-brown price-p">$ 15.4</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-6.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 6</h5>
+                  <p class="card-text text-brown price-p">$ 90.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-7.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 7</h5>
+                  <p class="card-text text-brown price-p">$ 45.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-8.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 8</h5>
+                  <p class="card-text text-brown price-p">$ 30.6</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-9.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 9</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-10.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 10</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-11.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 11</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-12.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 12</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-13.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 13</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-14.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 14</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/f-15.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fruits & Vegetables 15</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gift">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col center-col">
+            <h3 class="text-center text-green">Gift Hampers</h3>
+            <hr class="underline" />
+          </div>
+        </div>
+        <div class="container mt-5 mb-5">
+          <div class="box-container" data-aos="zoom-in">
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/gift-1.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gift Hamper 1</h5>
+                  <p class="card-text text-brown price-p">$ 18.2</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/gift-2.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gift Hamper 2</h5>
+                  <p class="card-text text-brown price-p">$ 22.3</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/gift-3.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gift Hamper 3</h5>
+                  <p class="card-text text-brown price-p">$ 20.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pots">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col center-col">
+            <h3 class="text-center text-green">Best Selling Pots</h3>
+            <hr class="underline" />
+          </div>
+        </div>
+        <div class="container mt-5 mb-5">
+          <div class="box-container" data-aos="zoom-in">
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-1.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 1</h5>
+                  <p class="card-text text-brown price-p">$ 18.2</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-2.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 2</h5>
+                  <p class="card-text text-brown price-p">$ 22.3</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-3.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 3</h5>
+                  <p class="card-text text-brown price-p">$ 20.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-4.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 4</h5>
+                  <p class="card-text text-brown price-p">$ 10.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-5.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 5</h5>
+                  <p class="card-text text-brown price-p">$ 15.4</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-6.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 6</h5>
+                  <p class="card-text text-brown price-p">$ 90.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-7.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 7</h5>
+                  <p class="card-text text-brown price-p">$ 45.0</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-8.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 8</h5>
+                  <p class="card-text text-brown price-p">$ 30.6</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-9.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 9</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-10.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 10</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-11.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 11</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-12.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 12</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-13.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 13</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-14.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 14</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="card">
+                <img
+                  src="images/pot-15.webp"
+                  class="card-img-top"
+                  id="indoor-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pot 15</h5>
+                  <p class="card-text text-brown price-p">$ 34.5</p>
+                  <a href="#" class="btn" id="add-to-cart-btn"
+                    ><i
+                      class="fa-solid fa-cart-shopping"
+                      style="color: #ffffff"
+                    ></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="p-5">
+          <div class="col">
+            <div class="text-center text-brown center-col">
+              <h4>Elevate Your Plants with Expert Repotting Services</h4>
+              <p class="text-dark">
+                At Me Plants, we offer repotting services to help your plants
+                thrive in their new homes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="services-include">
+          <div class="box-1">
+            <h5 class="text-green">Services Included :</h5>
+            <ul>
+              <li>Expert selection of the perfect pot for your plant</li>
+              <li>
+                Careful repotting with utmost attention to your plants roots
+              </li>
+              <li>High-quality soil and nutrients to promote growth</li>
+            </ul>
+          </div>
+          <div class="box-2">
+            <img src="images/services-include.webp" alt="" />
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <p class="text-center text-brown">
+            Contact us to explore our repotting options and receive personalized
+            guidance from our experts.
+          </p>
+          <button class="btn" id="contact-btn">Contact Us on Whatsapp</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Me Plants !</h3>
+          <p>
+            Me Plants the definitive online destination for exceptional indoor
+            and outdoor plants and a delightful selection of home accessories.
+            Whether it is for offices,malls,hotels or any setting count on us
+            for the freshest & healthiest plants. Explore our (Gift a Plant)
+            option and revel in our swift and reliable delivery service.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Plants</a></li>
+            <li><a href="#">Pots</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Connect With Us</h3>
+          <p>Email: info@example.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Address: 123 Street, City, Country</p>
+        </div>
+      </div>
+      <div class="text-center mt-5" id="footer-bottom">&copy;Designed and Developed by <a href="https://sarangpachari.github.io/">Sarang P Achari</a> </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
